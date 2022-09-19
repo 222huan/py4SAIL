@@ -6,7 +6,7 @@ Hector Nieto translated the FORTRAN code into PYTHON code, which is the pypro4sa
 This project is a modification of pypro4sail, because I have found some inconformity between these two versions of the code, 
 and the results of pypro4sail can't fully agree with the simalations displayed in some papers listed below:
 
-[1] Verhoef, W., Jia, L., Xiao, Q., & Su, Z. (2007). Unified optical-thermal four-stream radiative transfer theory for homogeneous vegetation canopies. Ieee Transactions on Geoscience and Remote Sensing, 45, 1808-1822.
+[1] Verhoef, W., Jia, L., Xiao, Q., & Su, Z. (2007). Unified optical-thermal four-stream radiative transfer theory for homogeneous vegetation canopies. IEEE Transactions on Geoscience and Remote Sensing, 45, 1808-1822.
 
 [2] Cao, B., Roujean, J.-L., Gastellu-Etchegorry, J.-P., Liu, Q., Du, Y., Lagouarde, J.-P., Huang, H., Li, H., Bian, Z., Hu, T., Qin, B., Ran, X., & Xiao, Q. (2021). A general framework of kernel-driven modeling in the thermal infrared domain. Remote Sensing of Environment, 252, 112157.
 
