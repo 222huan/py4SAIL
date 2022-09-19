@@ -13,20 +13,29 @@ Cao, B., Roujean, J.-L., Gastellu-Etchegorry, J.-P., Liu, Q., Du, Y., Lagouarde,
 The possible mistakes are listed as follows:
 ------------------------------------
 In pypro4sail\four_sail.py:
+
 the function calc_lidf_verhoef calculated LIDF with 18 angles, while there are 13 angles used in FORTRAN code
+
 the function weighted_sum_over_lidf also use 18 angles, while there are 13 angles used in FORTRAN code
+
 This may not be a mistake but another parameterization scheme, but I change it to keep with the FORTRAN code
 
 ------------------------------------
 In pypro4sail\four_sail.py line 437:
+
 rsodt = ((tss + tsd) * tdo + (tsd + tss * rsoil * rdd) * too) * rsoil / dn
+
 should be changed as:
+
 rsodt = ((tss + tsd) * tdo + (tsd + tss * rsoil * rdd) * too) * rsoil / dn + rsod
 
 ------------------------------------
 In pypro4sail\pypro4sail.py line 226:
+
 tso = tss * too + tss * (tdo + rsoil * rdd * too) / (1. - rsoil * rdd)
+
 should be changed as:
+
 tso = tsstoo + tss * (tdo + rsoil * rdd * too) / (1. - rsoil * rdd)
 
 
