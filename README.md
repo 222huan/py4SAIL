@@ -38,6 +38,7 @@ should be changed as:
 
 tso = tsstoo + tss * (tdo + rsoil * rdd * too) / (1. - rsoil * rdd)
 
+------------------------------------
 
 I have changed above possible mistakes, and the new four_sail.py and pypro4sail.py have been uploaded.
 In order to use, please replace the old four_sail.py and pypro4sail.py with these two modified files 
