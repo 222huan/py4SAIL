@@ -6,9 +6,9 @@ Hector Nieto translated the FORTRAN code into PYTHON code, which is the pypro4sa
 This project is a modification of pypro4sail, because I have found some inconformity between these two versions of the code, 
 and the results of pypro4sail can't fully agree with the simalations displayed in some papers listed below:
 
-Verhoef, W., Jia, L., Xiao, Q., & Su, Z. (2007). Unified optical-thermal four-stream radiative transfer theory for homogeneous vegetation canopies. Ieee Transactions on Geoscience and Remote Sensing, 45, 1808-1822.
+[1] Verhoef, W., Jia, L., Xiao, Q., & Su, Z. (2007). Unified optical-thermal four-stream radiative transfer theory for homogeneous vegetation canopies. Ieee Transactions on Geoscience and Remote Sensing, 45, 1808-1822.
 
-Cao, B., Roujean, J.-L., Gastellu-Etchegorry, J.-P., Liu, Q., Du, Y., Lagouarde, J.-P., Huang, H., Li, H., Bian, Z., Hu, T., Qin, B., Ran, X., & Xiao, Q. (2021). A general framework of kernel-driven modeling in the thermal infrared domain. Remote Sensing of Environment, 252, 112157.
+[2] Cao, B., Roujean, J.-L., Gastellu-Etchegorry, J.-P., Liu, Q., Du, Y., Lagouarde, J.-P., Huang, H., Li, H., Bian, Z., Hu, T., Qin, B., Ran, X., & Xiao, Q. (2021). A general framework of kernel-driven modeling in the thermal infrared domain. Remote Sensing of Environment, 252, 112157.
 
 The possible mistakes are listed as follows:
 ------------------------------------
@@ -40,5 +40,10 @@ tso = tsstoo + tss * (tdo + rsoil * rdd * too) / (1. - rsoil * rdd)
 
 ------------------------------------
 
+Besides, single wavelength instead of broadband is used in simulation.
+
 I have changed above possible mistakes, and the new four_sail.py and pypro4sail.py have been uploaded.
-In order to use, please replace the old four_sail.py and pypro4sail.py with these two modified files 
+
+In order to use, please replace the old four_sail.py and pypro4sail.py with these two modified files.
+
+validation.ipynb shows the simulation results, which is consistent with the figures in Verhoef et al (2007).
