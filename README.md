@@ -1,7 +1,7 @@
 # py4SAIL
 The original 4SAIL is based on FORTRAN, which can be found in http://teledetection.ipgp.jussieu.fr/prosail/
 
-Hector Nieto translated the FORTRAN code into PYTHON code, which is the pypro4sail (https://github.com/hectornieto/pypro4sail)
+Hector Nieto translated the FORTRAN code into PYTHON code, which is the pypro4sail (https://github.com/hectornieto/pypro4sail). Thanks to the authors for their hard work and dedication.
 
 This project is a modification of pypro4sail, because I have found some inconformity between these two versions of the code, 
 and the results of pypro4sail can't fully agree with the simalations displayed in some papers listed below:
